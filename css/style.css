@@ -88,3 +88,64 @@ a{
   border-color:#FFBFA8;
   width: 150px;
 }
+
+#membership_plan{
+  margin: 100px 0px;
+}
+
+#membership_plan .container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.plan_item{
+  
+  box-shadow: 1px 1px 2px black;
+  padding: 0px;
+  width: 250px;
+  text-align: center;
+}
+
+.plan_item h1{
+  padding: 25px 10px;
+  font-weight: bold;
+  background-color: #FFBFA8;
+  height:100px;
+  margin: 0;
+}
+
+.plan_item h2{
+  background-color: gray;
+  height:70px;
+  padding: 20px 0px;
+  font-size: 20px;
+}
+
+.bg_btn{
+  background-color: #FFBFA8;
+}
+
+.btn_plan{
+  height: 50px;
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+  margin: 15px 0px;
+  background-color: grey;
+}
+
+ .heading{
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left:10px;
+  margin-right:10px;
+}
+
+.sub_heading{
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.heading h1{
+  font-size: 35px;
+}
