@@ -13,6 +13,7 @@ a{
 
 .brand_item{
   color:#4A2121;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -28,6 +29,10 @@ a{
 
 .navbar-light ul li a{
   color: black !important;
+}
+
+.navbar-light ul li a:hover{
+  color: orangered !important;
 }
 
 .navbar-light .navbar-toggler{
@@ -89,20 +94,30 @@ a{
   width: 150px;
 }
 
+.btn:hover{
+  color: #FFBFA8;
+}
+
+#core_value{
+  margin: 100px 0px;
+}
+
 #membership_plan{
   margin: 100px 0px;
 }
 
 #membership_plan .container{
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .plan_item{
   
   box-shadow: 1px 1px 2px black;
   padding: 0px;
-  width: 250px;
   text-align: center;
 }
 
@@ -133,6 +148,7 @@ a{
   background-color: grey;
 }
 
+
  .heading{
   text-align: center;
   margin-bottom: 40px;
@@ -151,5 +167,82 @@ a{
 
 .plan_tittle{
   color: black;
+  font-weight: bold;
+}
+
+.check_packages {
+  display: inline-flex;
+} 
+
+ .fas{
+  margin-top: 5px;
+  margin-right: 5px;
+} 
+
+.core_item{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.core_item .fas{
+  font-size: 30px;
+  color: black;
+  padding: 20px;
+  background-color: #FFBFA8;
+  border-radius: 50%;
+}
+
+.core_detail{
+  padding: 15px;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.core_detail a{
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.core_detail a:hover{
+  color: orangered;
+}
+
+.grid_container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2rem;
+  column-gap: 2rem;
+  justify-content: center;
+}
+
+.card{
+  background-color: transparent;
+}
+
+.btn_card{
+  border-color: #FFBFA8;
+  width: 100px;
+  color: black;
+}
+
+.btn_card:hover{
+  color: orangered;
+}
+
+
+#footer{
+  margin-top: 100px;
+  background-color: black;
+  color: white;
+
+}
+
+.footer_brand{
+  color: white;
+  font-size: 25px;
   font-weight: bold;
 }
