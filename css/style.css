@@ -4,7 +4,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: black;
-  background-color: rgba(163, 168, 153, 0.4);
+  background-color:white;
+  box-sizing: border-box;
 }
 
 a{
@@ -12,7 +13,7 @@ a{
 }
 
 .brand_item{
-  color:#4A2121;
+  color:black;
   font-size: 25px;
   font-weight: bold;
 }
@@ -32,7 +33,7 @@ a{
 }
 
 .navbar-light ul li a:hover{
-  color: orangered !important;
+  color: chocolate !important;
 }
 
 .navbar-light .navbar-toggler{
@@ -115,7 +116,6 @@ a{
 }
 
 .plan_item{
-  
   box-shadow: 1px 1px 2px black;
   padding: 0px;
   text-align: center;
@@ -129,7 +129,8 @@ a{
 }
 
 .plan_item h2{
-  background-color: gray;
+  background-color: black;
+  color: white;
   height:70px;
   padding: 20px 0px;
   font-size: 20px;
@@ -145,9 +146,13 @@ a{
   color:white;
   font-weight: bold;
   margin: 15px 0px;
-  background-color: grey;
+  background-color: black;
 }
 
+.btn_plan:hover{
+  background-color: chocolate;
+  color: white;
+}
 
  .heading{
   text-align: center;
@@ -208,14 +213,14 @@ a{
 }
 
 .core_detail a:hover{
-  color: orangered;
+  color: chocolate;
 }
 
 .grid_container{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  row-gap: 2rem;
-  column-gap: 2rem;
+  column-gap: 1rem;
+  align-items: center;
   justify-content: center;
 }
 
@@ -230,19 +235,56 @@ a{
 }
 
 .btn_card:hover{
-  color: orangered;
+  background-color: chocolate;
+  color: white;
 }
 
 
 #footer{
   margin-top: 100px;
-  background-color: black;
-  color: white;
+  background-color: #FFBFA8;
+  color: black;
 
 }
 
 .footer_brand{
-  color: white;
+  color: black;
   font-size: 25px;
+  font-weight: bold;
+}
+
+.contact_footer{
+  display: flex;
+}
+
+#footer .col-md-4{
+  margin-top: 50px;
+}
+
+.form-control{
+  width: 200px;
+}
+
+.form_wrap{
+  display: flex;
+  position: relative;
+}
+
+.btn_footer{
+  background-color:black ;
+  color: white;
+  position: absolute;
+  width: 100px;
+  top: -1px;
+  left: 150px;
+  border-left: 0;
+}
+
+.btn_footer:hover{
+  color: white;
+  background-color: chocolate;
+}
+
+.sub_newsletter h1, .get_in_touch h1{
   font-weight: bold;
 }
