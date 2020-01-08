@@ -50,19 +50,19 @@ a{
 }
 
 #banner1{
-  margin-top: 60px;
+  margin-top: 50px;
   background: #333 url(/images/banner1.jpeg) no-repeat center center/cover;
   height: 70vh;
 }
 
 #banner2{
-  margin-top: 60px;
+  margin-top: 50px;
   background: #333 url(/images/banner4.jpeg) no-repeat center center/cover;
   height: 70vh;
 }
 
 #banner3{
-  margin-top: 60px;
+  margin-top: 50px;
   background: #333 url(/images/banner7.jpeg) no-repeat center center/cover;
   height: 70vh;
 }
@@ -102,6 +102,39 @@ a{
 #core_value{
   margin: 100px 0px;
 }
+
+.core_item{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.core_item .fas{
+  font-size: 30px;
+  color: black;
+  padding: 20px;
+  background-color: #FFBFA8;
+  border-radius: 50%;
+}
+
+.core_detail{
+  padding: 15px;
+}
+
+.title{
+  font-weight: bold;
+}
+
+.core_detail a{
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.core_detail a:hover{
+  color: chocolate;
+}
+
 
 #membership_plan{
   margin: 100px 0px;
@@ -183,38 +216,6 @@ a{
   margin-top: 5px;
   margin-right: 5px;
 } 
-
-.core_item{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.core_item .fas{
-  font-size: 30px;
-  color: black;
-  padding: 20px;
-  background-color: #FFBFA8;
-  border-radius: 50%;
-}
-
-.core_detail{
-  padding: 15px;
-}
-
-.title{
-  font-weight: bold;
-}
-
-.core_detail a{
-  color: black;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.core_detail a:hover{
-  color: chocolate;
-}
 
 .grid_container{
   display: grid;
@@ -330,6 +331,7 @@ a{
 }
 
 .flex_about_us .card-body{
+  font-style: italic;
   background-color: #F1F1F1;
 }
 
@@ -455,3 +457,195 @@ a{
     font-size: 12px;
     font-weight: bold;
   }
+
+/* ===============================
+  Tablet Version */
+  
+@media screen and (max-width:768px){
+
+  .coop_brand{
+    display: none;
+  }
+
+  .core_item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .core_first_child{
+    margin-top: -18px;
+  }
+
+  #membership_plan .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+  .grid_container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 3rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card{
+      width: auto !important;
+    }
+
+    .btn{
+      margin-top: 20px;
+    }
+
+    .form_wrap .form-control{
+      width: 300px;
+    }
+
+    .btn_footer{
+      background-color:black ;
+      color: white;
+      position: absolute;
+      width: 100px;
+      top: -20px;
+      left: 130px;
+      border-left: 0;
+    }
+
+ /* ============================
+  About Us Page for Tablet */
+
+    #about_us .flex_about_us{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .flex_about_us .card{
+      margin-left: 20px;
+    }
+    .img-plan{
+      height: 250px !important;
+      width: auto;
+    }
+
+    #about_us .flex_about_us .card{
+      margin-top: 30px;
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-row-gap: 3rem;
+      margin-top: 50px;
+    }
+
+    /* =========================
+      Member Page for Mobile */
+
+      #member_form .form-control{
+        width: 600px;
+        height: 40px;
+      }
+
+      #member_banner .container h1{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      
+      #member_banner .container p{
+        font-size: 14px;
+      }
+
+}
+
+
+  /* =============================
+    Mobile Version */
+
+@media screen and (max-width:500px){
+
+  .coop_brand{
+    display: none;
+  }
+  
+  #membership_plan .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+  .grid_container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 3rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card{
+      width: auto !important;
+    }
+
+    .btn{
+      margin-top: 20px;
+    }
+
+    .form_wrap .form-control{
+      width: 300px;
+    }
+
+    .btn_footer{
+      background-color:black ;
+      color: white;
+      position: absolute;
+      width: 100px;
+      top: -20px;
+      left: 200px;
+      border-left: 0;
+    }
+
+ /* ============================
+  About Us Page for Mobile */
+
+    #about_us .flex_about_us{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #about_us .flex_about_us .card{
+      margin-top: 30px;
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-row-gap: 3rem;
+      margin-top: 50px;
+    }
+
+    /* =========================
+      Member Page for Mobile */
+
+      #member_form .form-control{
+        width: 260px;
+        height: 40px;
+      }
+
+      #member_banner .container h1{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      
+      #member_banner .container p{
+        font-size: 14px;
+      }
+
+}
