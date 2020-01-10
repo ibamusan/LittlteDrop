@@ -13,7 +13,6 @@ a{
 }
 
 .brand_item{
-  /* color:black; */
   color:white;
   font-size: 25px;
   font-weight: bold;
@@ -505,7 +504,6 @@ a{
     height: 50vh;
   }
 
-
 /* ===============================
   Tablet Version */
   
@@ -601,7 +599,6 @@ a{
       padding: 10px;
     }
 
-
  /* ============================
   About Us Page for Tablet */
 
@@ -649,8 +646,7 @@ a{
 
 }
 
-
-  /* =============================
+/* =============================
     Mobile Version */
 
 @media screen and (max-width:500px){
@@ -725,7 +721,6 @@ a{
     .socialhandle .fab{
       padding: 10px;
     }
-
 
  /* ============================
   About Us Page for Mobile */
