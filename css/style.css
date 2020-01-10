@@ -283,7 +283,7 @@ a{
 }
 
 .btn_footer:hover{
-  color: black;
+  color: white;
   background-color: #66A5AD;
 }
 
@@ -296,7 +296,7 @@ a{
 
 #Company_breadcrumb{
   margin-top: 50px;
-  background-color: #F1F1F1;
+  background-color: #C4DFE6;
   border-bottom: 1px solid gray;
 }
 
@@ -314,7 +314,8 @@ a{
 }
 
 .breadcrumb a{
-  color:coral;
+  color:#003B46;
+  font-weight: bold;
 }
 
 .about_our_coy{
@@ -333,7 +334,7 @@ a{
 
 .flex_about_us .card-body{
   font-style: italic;
-  background-color: #F1F1F1;
+  background-color: #C4DFE6;
 }
 
 .flex_about_us .card-title{
@@ -358,12 +359,13 @@ a{
   padding: 10px;
   text-align: center;
   border: 1px solid black;
-  background-color: #F1F1F1;
+  background-color: #C4DFE6;
 }
 .service .fas{
+  color: white;
   font-size: 25px;
   padding: 20px;
-  background-color: #FFBFA8;
+  background-color: #003B46;
   border-radius: 50%;
 }
 
@@ -377,13 +379,13 @@ a{
 }
 
 .service .btn{
-  color: black;
+  color: white;
   width: 100px;
 }
 
 .service .btn:hover{
-  background-color: chocolate;
   color: white;
+  background-color: #66A5AD;
 }
 
 /* ==================================
@@ -441,23 +443,39 @@ a{
 }
 
 #member_form .btn{
-  color: black;
+  color: white;
   font-size: 16px;
 }
 
 #member_form .btn:hover{
-  background-color: chocolate;
+  background-color: #66A5AD;
   color: white;
 }
 
 /* ===============================
   Support Page  */
 
+  #support_banner{
+    background: black url(../images/servicesupport.png) no-repeat center center/cover;
+    height: 50vh;
+  }
+
   #member_form .container p{
     margin-top: 20px;
     font-size: 12px;
     font-weight: bold;
   }
+
+
+  
+/* ===============================
+  Contact Page  */
+
+  #contact_banner{
+    background: black url(../images/contactimage.jpg) no-repeat center center/cover;
+    height: 50vh;
+  }
+
 
 /* ===============================
   Tablet Version */
